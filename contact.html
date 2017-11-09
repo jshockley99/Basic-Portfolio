@@ -2,34 +2,49 @@
 <html>
 <head>
 	<title>Julie Shockley</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<head>
-		<h1>Julie Shockley</h1>
-		<nav>
-			<ul>
-			<li><a href="index.html">About</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</head>
-	<section>
-		<section>
-			<h2>Contact</h2>
-			<hr />
-			<form action="" method="post">
-			Name <input type="text" name="name"><br>
-  			Email <input type="text" name="email"><br>
-  			Message <input type="text" name="message">
-  			<input type="submit" value="Submit">
-			</form>
+	<header>
+		<section class="container">	
+			<h1>Julie Shockley</h1>
+			<nav>
+				<ul>
+				<li><a href="index.html">About</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
 		</section>
-		<section>
+	</header>
+	<section class="container">
+		<section id="main">
+			<article>
+				<h2>Contact</h2>
+				<hr />
+				<form action="" method="post">
+				<fieldset>
+					<label for="Name">Name</label> 
+					<input name="name" type="text" />
+  					<label for="Email">Email</label>
+  					<input name="email" type="text" />
+  					<label for="Message">Message</label>
+  					<textarea rows="5" cols="100"></textarea>
+  				</fieldset>
+  				<input class="button" type="submit" value="Submit" />
+				</form>
+			</article>
+		</section>
+		<aside id="sidebar">
 			<h3>Connect with Me</h3>
 			<hr />
-			<p><a href="https://github.com/jshockley99"><img src="assets/images/38401.png" height="32px" /></a><a href="https://www.linkedin.com/in/julieshockley/"><img src="assets/images/square-linkedin-512.png" height="32px" /></a><a href="#"><img src="assets/images/so-icon.png" height="32px" /></a></p>
-		</section>	
+			<p>
+				<a href="https://github.com/jshockley99"><img src="assets/images/github_square_black_107109.png" height="32px" /></a>
+				<a href="https://www.linkedin.com/in/julieshockley/"><img src="assets/images/square-linkedin-512.png" height="32px" /></a>
+				<a href="https://stackoverflow.com/users/8790713/julie-shockley?tab=profile"><img src="assets/images/stackoverflow-square-social-media_764927.png" height="32px" /></a>
+			</p>
+		</aside>
 	</section>
 	<footer>
 		<p>Copyright &copy; 2017 Julie Shockley</p>
